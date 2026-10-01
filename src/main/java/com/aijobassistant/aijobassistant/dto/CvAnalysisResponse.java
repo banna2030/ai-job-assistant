@@ -1,4 +1,12 @@
 package com.aijobassistant.aijobassistant.dto;
 
-public class CvAnalysisResponse {
+import java.util.List;
+
+public record CvAnalysisResponse(
+        int matchScore,
+        List<String> matchingSkills,
+        List<String> missingSkills,
+        List<String> recommendations
+) {
+
 }

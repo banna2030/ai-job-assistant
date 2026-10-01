@@ -1,4 +1,7 @@
 package com.aijobassistant.aijobassistant.dto;
 
-public class AiRequest {
-}
+
+    public record AiRequest(String message){
+
+    }
+

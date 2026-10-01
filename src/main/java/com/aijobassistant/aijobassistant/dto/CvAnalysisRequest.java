@@ -1,4 +1,5 @@
 package com.aijobassistant.aijobassistant.dto;
 
-public class CvAnalysisRequest {
+public record CvAnalysisRequest(String cv, String jobDescription){
+
 }

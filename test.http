@@ -1,0 +1,17 @@
+# @timeout 120
+
+POST http://localhost:8080/api/cv/analyze
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="cv"; filename="cv.pdf"
+Content-Type: application/pdf
+
+< ./cv.png
+
+--WebAppBoundary
+Content-Disposition: form-data; name="jobDescription"
+
+We are looking for Electric engineer with revet and a Java Developer with experience in Java, Spring Boot, REST APIs, MySQL, Docker and AWS.CAD #DMAX
+
+--WebAppBoundary--
